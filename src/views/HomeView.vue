@@ -4,8 +4,7 @@
       <FreesideHeader class="header" :scrolledToTop="scrolledToTop"></FreesideHeader>
 
       <video playsinline autoplay muted loop id="showcase-video">
-        <!--        <source src="media/mining.mp4" type="video/mp4">-->
-        <source src="media/nullsector2.mp4" type="video/mp4">
+        <source src="media/showcase.mp4" type="video/mp4">
       </video>
       <div class="overlay">
         <div class="motto">
@@ -19,6 +18,9 @@
             Freeside Heavy Industries is a specialized heavy industry consultancy and manufacturing
             firm operating all over the world.
           </div>
+        </div>
+        <div class="arrow">
+          <i class="fa-solid fa-arrow-down"></i>
         </div>
       </div>
     </div>
@@ -139,10 +141,11 @@ export default class HomeView extends Vue {
 
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: auto 1fr;
+      grid-template-rows: auto 1fr auto;
       grid-template-areas:
       "header"
-      "motto";
+      "motto"
+      "arrow";
 
       .motto {
         grid-area: motto;
@@ -171,6 +174,14 @@ export default class HomeView extends Vue {
           font-size: 30px;
           line-height: 1.1em;
         }
+      }
+
+      .arrow {
+        grid-area: arrow;
+
+        font-size: 30px;
+        color: #fff;
+        padding: 1em;
       }
     }
 

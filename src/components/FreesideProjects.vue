@@ -73,6 +73,7 @@ $project-margin: 2em;
 
     margin: -$project-margin 0 0 0;
     padding: 0;
+    list-style-type: none;
 
     li {
       width: 50%;
