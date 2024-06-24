@@ -15,7 +15,7 @@
             build Together.
           </div>
           <div class="small">
-            Freeside Heavy Industries is a specialized heavy industry consultancy and manufacturing
+            Freeside Heavy Industries is a specialised heavy industry consultancy and manufacturing
             firm operating all over the world.
           </div>
         </div>
