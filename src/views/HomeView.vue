@@ -266,4 +266,22 @@ export default class HomeView extends Vue {
     }
   }
 }
+
+@media (max-width: 800px) {
+  .home {
+    .full {
+      .overlay {
+        .motto {
+          .large {
+            font-size: 80px;
+          }
+
+          .small {
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

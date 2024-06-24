@@ -62,6 +62,7 @@ header {
 
     ul {
       display: flex;
+      flex-flow: row nowrap;
       gap: $padding;
       margin: 0;
       padding: 0 0 0 $padding;
@@ -113,6 +114,33 @@ header.not-transparent {
 
   nav ul a {
     color: #596360;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .logo {
+      border-right: none;
+      border-bottom: $border;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav {
+      ul {
+        flex-flow: column nowrap;
+        padding: 2rem 0;
+        gap: 2rem;
+      }
+    }
+
+    .quote {
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 }
 </style>
