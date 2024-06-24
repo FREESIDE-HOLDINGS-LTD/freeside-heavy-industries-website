@@ -142,5 +142,11 @@ header.not-transparent {
       margin-bottom: 2rem;
     }
   }
+
+  header.not-transparent {
+    nav, .quote {
+      display: none;
+    }
+  }
 }
 </style>
