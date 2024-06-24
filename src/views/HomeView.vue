@@ -123,6 +123,8 @@ export default class HomeView extends Vue {
 
 <style scoped lang="scss">
 .home {
+  overflow: hidden;
+
   .header {
     position: fixed;
     z-index: 99;
@@ -131,7 +133,7 @@ export default class HomeView extends Vue {
 
   .full {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-color: #000000;
 

@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss">
-body {
+body, html {
   --color-secondary: #566955;
 
   margin: 0;
