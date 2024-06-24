@@ -1,9 +1,9 @@
 <template>
   <div class="projects">
     <ul>
-      <li v-for="project in projects" :key="project.name + project.year">
+      <li v-for="(project, index) in projects" :key="project.name + project.year">
         <div class="wrapper">
-          <img class="image" src="media/project1.jpg" alt="Project image"/>
+          <img class="image" :src="projectImage(index)" alt=""/>
           <div class="description">
             <div class="name">
               {{ project.name }}
@@ -17,7 +17,7 @@
             <div class="status">
               {{ statusLabel(project.status) }}
             </div>
-        </div>
+          </div>
         </div>
       </li>
     </ul>
@@ -30,6 +30,15 @@ import { Project, projects, ProjectStatus } from '@/data/projects';
 
 @Component
 export default class FreesideHeader extends Vue {
+  images = [
+    'project1.jpg',
+    'project2.jpg',
+    'project3.jpg',
+    'project4.webp',
+    'project5.webp',
+    'project6.jpg',
+  ]
+
   get projects(): Project[] {
     return projects;
   }
@@ -44,6 +53,10 @@ export default class FreesideHeader extends Vue {
         return 'Unknown';
     }
   }
+
+  projectImage(index: number): string {
+    return `media/${this.images[index % this.images.length]}`;
+  }
 }
 </script>
 
@@ -52,7 +65,7 @@ $clipped-corner-height: 10px;
 $clipped-corner-width: 100%;
 
 .projects {
-  $project-margin: 2em;
+$project-margin: 2em;
 
   ul {
     display: flex;
