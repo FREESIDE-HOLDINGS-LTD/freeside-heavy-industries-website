@@ -156,6 +156,14 @@ $project-margin: 2em;
 @media (max-width: 1700px) {
   .projects ul li {
     width: 100%;
+
+    .wrapper {
+      .description {
+        .name, .year, .location, .status {
+          font-size: 10px;
+        }
+      }
+    }
   }
 }
 </style>
