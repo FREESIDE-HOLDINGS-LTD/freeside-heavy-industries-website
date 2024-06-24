@@ -42,7 +42,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
 
-  transition: 2s all;
+  transition: 2s background-color, 2s color;
 
   .logo {
     border-right: $border;
