@@ -19,4 +19,11 @@ body, html {
   text-align: center;
   color: #2c3e50;
 }
+
+/* Makes it so clicking links to elements smoothly scrolls to them instead of teleporting. */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 </style>
