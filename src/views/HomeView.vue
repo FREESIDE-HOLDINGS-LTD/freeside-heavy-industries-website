@@ -76,9 +76,10 @@
         indefinitely. You acknowledge that this consent cannot be revoked and will remain in effect
         for the lifetime of the Company and its successors and shall not be voided or
         nullified by any events beyond the control of the Company, including but not limited to acts
-        of war, government intervention including disolving the Company, acts of the almighty God,
-        terrorism, riots, ecological collapse of the planet, the invisible hand of the free market,
-        or the collapse of the society as we know it.
+        of war, invasion or act of foreign enemy, hostilities, civil war, rebellion, strike, labor
+        disturbance, lockout, civil commotion, government intervention including dissolving the
+        Company, acts of the almighty God, terrorism, riots, ecological collapse of the planet, the
+        invisible hand of the free market, or the collapse of the society as we know it.
       </div>
     </footer>
   </div>
