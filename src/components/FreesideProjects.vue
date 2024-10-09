@@ -8,11 +8,8 @@
             <div class="name">
               {{ project.name }}
             </div>
-            <div class="location">
-              {{ project.location }}
-            </div>
-            <div class="year">
-              {{ project.year }}
+            <div class="location_and_year">
+              {{ project.location + " | " + project.year}}
             </div>
             <div class="status">
               {{ statusLabel(project.status) }}
@@ -91,20 +88,14 @@ $project-margin: 2em;
         .description {
           position: relative;
 
-          display: grid;
-          grid-template-columns: auto 1fr auto;
-          grid-template-rows: auto auto;
-          grid-template-areas:
-      "name name name"
-      "location year status";
+          display: flex;
+          flex-direction: column;
 
           background-color: #fff;
           margin: 2em;
           padding: 1em;
 
           .name {
-            grid-area: name;
-
             font-family: "Big Shoulders Display", sans-serif;
             font-weight: 800;
             line-height: 1.2em;
@@ -113,23 +104,18 @@ $project-margin: 2em;
           }
 
           .year {
-            grid-area: year;
           }
 
-          .location {
-            grid-area: location;
-
-            &::after {
-              content: '|';
-              padding: 0 .2em;
-            }
+          .location_and_year {
           }
 
           .status {
-            grid-area: status;
+            position: absolute;
+            bottom: 0.6em;
+            right: 1em;
           }
 
-          .year, .location, .status {
+          .location_and_year, .status {
             font-family: "Big Shoulders Display", sans-serif;
             font-weight: 700;
             line-height: 1.3em;
@@ -160,7 +146,7 @@ $project-margin: 2em;
     .wrapper {
       .description {
         .name, .year, .location, .status {
-          font-size: 10px;
+          font-size: 30px;
         }
       }
     }
