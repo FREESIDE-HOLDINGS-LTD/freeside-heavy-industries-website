@@ -16,9 +16,28 @@ export class Project {
 export const projects: Project[] = [
   new Project(
     'Chaos Communication Congress',
-    2024,
+    2025,
     'Hamburg, Germany',
     ProjectStatus.Planned,
+  ),
+  new Project(
+    'What Hackers Yearn',
+    2025,
+    'Zeewolde, Netherlands',
+    ProjectStatus.Planned,
+  ),
+  new Project(
+    'FOSDEM',
+    2025,
+    'Brussels, Belgium',
+    ProjectStatus.Planned,
+  ),
+
+  new Project(
+    'Chaos Communication Congress',
+    2024,
+    'Hamburg, Germany',
+    ProjectStatus.Completed,
   ),
   new Project(
     'Electromagnetic Field',
