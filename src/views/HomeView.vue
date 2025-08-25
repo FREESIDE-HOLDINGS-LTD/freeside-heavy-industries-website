@@ -25,11 +25,6 @@
       </div>
     </div>
 
-    <div class="content" id="section-projects">
-      <FreesideH2 text="Projects"></FreesideH2>
-      <FreesideProjects></FreesideProjects>
-    </div>
-
     <footer id="section-contact">
       <div class="contact">
         <div class="small">
@@ -88,12 +83,10 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import FreesideHeader from '@/components/FreesideHeader.vue';
-import FreesideProjects from '@/components/FreesideProjects.vue';
 import FreesideH2 from '@/components/FreesideH2.vue';
 
 @Component({
   components: {
-    FreesideProjects,
     FreesideHeader,
     FreesideH2,
   },

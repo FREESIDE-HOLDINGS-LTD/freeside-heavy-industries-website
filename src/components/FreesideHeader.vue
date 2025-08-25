@@ -8,7 +8,6 @@
     <nav>
       <ul>
         <li><a href="#">Showcase</a></li>
-        <li><a href="#section-projects">Projects</a></li>
         <li><a href="#section-contact">Contact</a></li>
       </ul>
     </nav>
